@@ -1,7 +1,7 @@
 # provenance-io-mainnet
 Provenance.io Mainnet Validator Node Setup
 
-Install Prerequisites
+##Install Prerequisites
 
 ```
 sudo apt update
