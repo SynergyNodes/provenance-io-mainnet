@@ -24,6 +24,7 @@ sudo apt-get install manpages-dev
 # install go
 curl https://dl.google.com/go/go1.17.5.linux-amd64.tar.gz | sudo tar -C/usr/local -zxvf -
 
+# Update environment variables to include go
 cat <<'EOF' >>$HOME/.profile
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
