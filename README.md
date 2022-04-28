@@ -151,7 +151,7 @@ journalctl -t provenanced -f
 
 ## Create a Wallet for your Validator Node
 ```
-provenanced keys add synergy2 --recover  --home /home/node/.provenanced
+provenanced keys add validator --home /home/node/.provenanced
 ```
 
 ## Create and Register Your Validator Node
@@ -175,8 +175,36 @@ provenanced tx staking create-validator \
 
 ## Delegate HASH to Your Node
 ```
-provenanced tx staking delegate <validator address> 10000000000nhash --from validator --fees 381000000nhash --broadcast-mode block --chain-id pio-mainnet-1 --home /home/home/.provenanced -y
+provenanced tx staking delegate <validator address> 10000000000nhash --from validator --fees 381000000nhash --broadcast-mode block --chain-id pio-mainnet-1 --home /home/node/.provenanced -y
 ```
 ## Backup Validator node file
+
+Take a backup of the following files after you have created and registered your validator node successfully.
+
+```
+/home/node/.provenanced/config/node_key.json
+/home/node/.provenanced/config/priv_validator_key.json
+/home/node/.provenanced/data/priv_validator_state.json
+```
+## Upgrade Node to v1.8.2
+
+```
+cd provenance
+git fetch
+git pull
+git checkout v1.8.2
+make install
+cd
+provenanced version
+# should return v1.8.2
+
+# restart the node
+sudo systemctl restart provenanced
+
+# Wait for few minutes and check the status
+provenanced status
+```
+
+
 
 
