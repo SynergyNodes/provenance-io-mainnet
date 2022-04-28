@@ -1,5 +1,4 @@
-# provenance-io-mainnet
-Provenance.io Mainnet Validator Node Setup
+### Provenance.io Mainnet Validator Node Setup
 
 ## Install Prerequisites
 
