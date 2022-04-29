@@ -1,4 +1,6 @@
-### Provenance.io Mainnet Validator Node Setup
+# Provenance.io Mainnet Validator Node Setup
+
+![](https://www.synergynodes.com/youtube/Provenance_Mainnet_Validator_Node.jpg)
 
 ## Install Ubuntu 20.04 on a new server and login as root
 
