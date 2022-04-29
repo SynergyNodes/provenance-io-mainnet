@@ -159,6 +159,7 @@ Make sure to copy the 24 words Mnemonics Phrase, save it in a file and store it 
 provenanced keys add validator --home /home/node/.provenanced
 ```
 
+Send some HASH to this wallet.
 
 
 ## Create and Register Your Validator Node
