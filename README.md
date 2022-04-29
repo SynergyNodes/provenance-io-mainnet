@@ -78,8 +78,8 @@ wget https://storage.googleapis.com/provenance-mainnet-backups/latest-data-index
 ```
 ## Move the downloaded Snapshot to ``.provenanced`` folder and unzip the file
 ```
-mv latest-data.tar.gz .provenanced
-cd .provenanced
+mv latest-data-indexed.tar.gz ~/.provenanced
+cd ~/.provenanced
 rm -rf data
 tar -zxvf latest-data-indexed.tar.gz
 ```
