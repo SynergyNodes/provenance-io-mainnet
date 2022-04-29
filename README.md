@@ -150,9 +150,14 @@ journalctl -t provenanced -f
 ```
 
 ## Create a Wallet for your Validator Node
+
+Make sure to copy the 24 words Mnemonics Phrase, save it in a file and store it on a safe location.
+
 ```
 provenanced keys add validator --home /home/node/.provenanced
 ```
+
+
 
 ## Create and Register Your Validator Node
 ```
