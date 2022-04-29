@@ -33,8 +33,8 @@ su - node
 
 ```
 sudo apt update
-sudo apt install pkg-config build-essential libssl-dev curl jq git libleveldb-dev
-sudo apt-get install manpages-dev
+sudo apt install pkg-config build-essential libssl-dev curl jq git libleveldb-dev -y
+sudo apt-get install manpages-dev -y
 
 # install go
 curl https://dl.google.com/go/go1.17.5.linux-amd64.tar.gz | sudo tar -C/usr/local -zxvf -
