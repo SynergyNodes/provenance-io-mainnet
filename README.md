@@ -168,7 +168,7 @@ provenanced tx staking create-validator \
   --chain-id pio-mainnet-1 \
   --home /home/node/.provenanced \
   --moniker "Provenance_Node" \
-  --pubkey "$(provenanced tendermint show-validator --home /home/home/.provenanced)" \
+  --pubkey "$(provenanced tendermint show-validator --home /home/node/.provenanced)" \
   --amount 10000000000nhash \
   --identity "<Keybase.io ID>" \
   --details "Some description" \
