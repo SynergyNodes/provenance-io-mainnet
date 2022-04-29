@@ -86,7 +86,7 @@ tar -zxvf latest-data-indexed.tar.gz
 
 ## Download genesis.json, app.toml, config.toml files
 ```
-cd .provenanced
+cd .provenanced/config
 rm genesis.json
 rm app.toml
 rm config.toml
