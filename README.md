@@ -74,15 +74,18 @@ cd
 provenanced init Provenance_Node --chain-id pio-mainnet-1
 ```
 ## Download latest Snapshot
+
+NOTE: In the Youtube video, we downloaded ``latest-data-indexed.tar.gz`` (indexed) snapshot and used the snapshot to sync the blockchain. However, sometimes, this snapshot seems to be giving errors. Hence, we recommend that you download non-indexed file. We have updated the following commands to include the non-indexed snapshot.
+
 ```
-wget https://storage.googleapis.com/provenance-mainnet-backups/latest-data-indexed.tar.gz
+wget https://storage.googleapis.com/provenance-mainnet-backups/latest-data.tar.gz
 ```
 ## Move the downloaded Snapshot to ``.provenanced`` folder and unzip the file
 ```
-mv latest-data-indexed.tar.gz ~/.provenanced
+mv latest-data.tar.gz ~/.provenanced
 cd ~/.provenanced
 rm -rf data
-tar -zxvf latest-data-indexed.tar.gz
+tar -zxvf latest-data.tar.gz
 ```
 
 ## Download genesis.json, app.toml, config.toml files
