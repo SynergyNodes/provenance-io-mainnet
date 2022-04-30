@@ -65,6 +65,7 @@ cd provenance
 git checkout tags/v1.8.0 -b v1.8.0
 make clean
 make install
+cd
 ```
 
 ## Initialise your Validator node
