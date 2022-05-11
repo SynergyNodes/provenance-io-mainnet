@@ -217,6 +217,32 @@ sudo systemctl restart provenanced
 provenanced status
 ```
 
+## Check the status of the node
 
+```
+provenanced status
+```
 
+## Get Validator Operator Address (Valapor Address)
 
+Make sure to change ``<wallet-name>``, ``<user>`` to correct values.
+
+```
+provenanced keys show <wallet-name> --bech val --home /home/<user>/.provenanced --output json | jq -r .address
+```
+
+## Withdraw Rewards
+
+Make sure to change ``<validator-operator-address>``, ``<wallet-name>``, ``<user>`` to correct values.
+
+```
+provenanced tx distribution withdraw-rewards <validator-operator-address> --from <wallet-name> --home /home/<user>/.provenanced --chain-id=pio-mainnet-1 --gas auto --fees 381000000nhash --gas-adjustment 1.4 -y
+```
+
+## Delegate HASH to Node
+
+In the below command, as an example, we are delegating 1 HASH which is 1000000000nhash to the node. Please substitute the correct value of nhash in the following command. Also, make sure you keep 0.5 HASH for gas fees. Also, make sure to change ``<validator-operator-address>``, ``<wallet-name>``, ``<user>`` to correct values.
+
+```
+provenanced tx staking delegate <validator-operator-address> --from <wallet-name> --fees 381000000nhash --broadcast-mode block --chain-id pio-mainnet-1 --home /home/<user>/.provenanced -y
+```
